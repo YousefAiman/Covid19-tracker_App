@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    tools:context=".MapsActivity"
+    android:background="#611F3A"
+    >
+
+    <View
+        android:layout_width="0dp"
+        android:background="#F1FF8D"
+        android:layout_height="2dp"
+        map:layout_constraintEnd_toStartOf="@+id/guideline72"
+        map:layout_constraintStart_toStartOf="@+id/guideline4"
+        map:layout_constraintTop_toTopOf="@+id/guideline47" />
+
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="10dp"
+        map:layout_constraintBottom_toBottomOf="parent"
+        map:layout_constraintTop_toBottomOf="@+id/countrySv" />
+
+    <View
+        android:id="@+id/zoomOutView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/zoom_back"
+        map:layout_constraintBottom_toTopOf="@+id/guideline151"
+        map:layout_constraintEnd_toStartOf="@+id/guideline109"
+        map:layout_constraintStart_toStartOf="@+id/guideline105"
+        map:layout_constraintTop_toTopOf="@+id/guideline107" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:fontFamily="@font/roboto_bold"
+        android:gravity="center"
+        android:text="+"
+        android:textColor="#CFCFCF"
+        map:autoSizeTextType="uniform"
+        map:layout_constraintBottom_toTopOf="@+id/guideline151"
+        map:layout_constraintEnd_toStartOf="@+id/guideline110"
+        map:layout_constraintStart_toStartOf="@+id/guideline105"
+        map:layout_constraintTop_toTopOf="@+id/guideline107" />
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/zoomInTv"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/zoom_out_back"
+        android:fontFamily="@font/roboto_bold"
+        android:gravity="center"
+        android:text="-"
+        android:textColor="#121517"
+        map:autoSizeTextType="uniform"
+        map:layout_constraintBottom_toTopOf="@+id/guideline151"
+        map:layout_constraintEnd_toEndOf="@+id/guideline106"
+        map:layout_constraintStart_toStartOf="@+id/guideline108"
+        map:layout_constraintTop_toTopOf="@+id/guideline107" />
+    <androidx.appcompat.widget.SearchView
+        android:id="@+id/countrySv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/searchviewback"
+        map:layout_constraintEnd_toStartOf="@+id/guideline8"
+        map:searchHintIcon="@drawable/ic_search"
+        map:layout_constraintStart_toStartOf="@+id/guideline2"
+        map:layout_constraintTop_toTopOf="@+id/guideline3"
+        map:queryHint="Search for a Country"
+        map:searchIcon="@drawable/ic_search" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline105"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        map:layout_constraintGuide_percent="0.4" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline108"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        map:layout_constraintGuide_percent="0.52" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline110"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        map:layout_constraintGuide_percent="0.5" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline106"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        map:layout_constraintGuide_percent="0.6" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline109"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        map:layout_constraintGuide_percent="0.57" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        map:layout_constraintGuide_percent="0.92" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        map:layout_constraintGuide_percent="0.09735" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        map:layout_constraintGuide_percent="0.04" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline72"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        map:layout_constraintGuide_percent="0.96" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        map:layout_constraintGuide_percent="0.09" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline47"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        map:layout_constraintGuide_percent="0.08" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline151"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        map:layout_constraintGuide_percent="0.89" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline107"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        map:layout_constraintGuide_percent="0.845" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        map:layout_constraintGuide_percent="0.91" />
+
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:visibility="invisible"
+        map:layout_constraintBottom_toBottomOf="parent"
+        map:layout_constraintTop_toTopOf="@+id/map"/>
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:theme="?attr/actionBarTheme"
+        map:layout_constraintBottom_toTopOf="@+id/guideline47"
+        map:layout_constraintTop_toTopOf="parent" >
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:gravity="center"
+                android:lines="1"
+                android:text="@string/app_name"
+                android:textColor="#FFA200"
+                map:autoSizeTextType="uniform"
+                map:layout_constraintBottom_toBottomOf="parent"
+                map:layout_constraintEnd_toStartOf="@+id/guideline48"
+                map:layout_constraintHorizontal_bias="0.0"
+                map:layout_constraintStart_toStartOf="@+id/guideline49"
+                map:layout_constraintTop_toTopOf="parent"
+                map:layout_constraintVertical_bias="0.0" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:src="@drawable/corona_icon"
+                map:layout_constraintBottom_toTopOf="@+id/guideline53"
+                map:layout_constraintEnd_toStartOf="@+id/guideline51"
+                map:layout_constraintStart_toStartOf="@+id/guideline50"
+                map:layout_constraintTop_toTopOf="@+id/guideline52" />
+
+
+            <ImageView
+                android:id="@+id/menuIv"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:src="@drawable/ic_menu"
+                map:layout_constraintBottom_toTopOf="@+id/guideline53"
+                android:paddingEnd="5dp"
+                android:paddingStart="3dp"
+                map:layout_constraintEnd_toStartOf="@+id/guideline55"
+                map:layout_constraintStart_toStartOf="parent"
+                map:layout_constraintTop_toTopOf="@+id/guideline52" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:src="@drawable/ic_share"
+                map:layout_constraintBottom_toTopOf="@+id/guideline53"
+                map:layout_constraintEnd_toStartOf="@+id/guideline102"
+                map:layout_constraintStart_toStartOf="@+id/guideline91"
+                map:layout_constraintTop_toTopOf="@+id/guideline52" />
+
+            <ImageView
+                android:id="@+id/menuIv3"
+                android:layout_width="0dp"
+                android:visibility="invisible"
+                android:layout_height="0dp"
+                android:src="@drawable/ic_globe"
+                map:layout_constraintBottom_toTopOf="@+id/guideline53"
+                map:layout_constraintEnd_toStartOf="@+id/guideline104"
+                map:layout_constraintStart_toStartOf="@+id/guideline103"
+                map:layout_constraintTop_toTopOf="@+id/guideline52" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline48"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                map:layout_constraintGuide_percent="0.9594937" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline49"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                map:layout_constraintGuide_percent="0.59" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline50"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                map:layout_constraintGuide_percent="0.48" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline55"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                map:layout_constraintGuide_percent="0.09" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline91"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                map:layout_constraintGuide_percent="0.15" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline102"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                map:layout_constraintGuide_percent="0.22" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline103"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                map:layout_constraintGuide_percent="0.28" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline104"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                map:layout_constraintGuide_percent="0.35" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline51"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                map:layout_constraintGuide_percent="0.56" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline52"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                map:layout_constraintGuide_percent="0.2" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline53"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                map:layout_constraintGuide_percent="0.8" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:id="@+id/coordinatorLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        map:layout_constraintBottom_toBottomOf="parent">
+        <include layout="@layout/info_bottom_sheet" />
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

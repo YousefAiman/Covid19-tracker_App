@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/selectCountryItem"
+        android:title="Select Country"
+        />
+    <item
+        android:id="@+id/totalAmountItem"
+        android:title="Total Amount"
+        />
+    <item
+        android:id="@+id/lastThreeItem"
+        android:title="Last Three Months"
+        />
+    <item
+        android:id="@+id/identifyItem"
+        android:title="Identify the disease"
+        />
+</menu>
